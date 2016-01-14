@@ -493,7 +493,7 @@ if (!hello_run && Dubtrack.session.id && !ifUserBanned) {
                 if (options.let_active_afk) {
                     if (localStorage.getItem('customAfkMessage')) {
                         var customAfkMessage = localStorage.getItem('customAfkMessage');
-                        $('#chat-txt-message').val('[AFK] '+customAfkMessage);
+                        $('#chat-txt-message').val(''+customAfkMessage);
                     } else {
                         $('#chat-txt-message').val("[AFK] I'm not here right now.");
                     }
